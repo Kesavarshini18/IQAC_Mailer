@@ -1,0 +1,166 @@
+/* Mail Container */
+.mail-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Swipe Container */
+
+  
+  .mail-card {
+    min-width: 300px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .mail-card:hover {
+    transform: scale(1.04);
+  }
+  
+  .mail-card.active {
+    transform: scale(1.04) translateY(-10px); /* Adjust translateY value as needed */
+  }
+  
+  /* Mail Input Form */
+  .mail-input {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mail-input:hover {
+    transform: translateY(-5px);
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .input-group input[type="text"],
+  .input-group input[type="file"],
+  .input-group textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group input[type="text"]:focus,
+  .input-group input[type="file"]:focus,
+  .input-group textarea:focus {
+    border-color: #4caf50;
+  }
+  
+  .input-group input[type="file"] {
+    display: none;
+  }
+  
+  .input-group input[type="file"] + svg {
+    font-size: 1.5rem;
+    color: #969393;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .input-group input[type="file"] + svg:hover {
+    color: #4caf50;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+  
+  button {
+    padding: 12px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .clear-button {
+    background-color: #e74c3c;
+  }
+  
+  .clear-button:hover {
+    background-color: #c0392b;
+  }
+  .templates {
+    display: flex;
+    flex-wrap: wrap; /* Wrap templates to fit multiple on a line */
+    gap: 10px; /* Add space between cards */
+  }
+  
+  .template-card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: calc(33% - 10px); /* Adjust width based on desired number of cards per row */
+    cursor: pointer;
+  }
+  
+  .template-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .template-card.active {
+    transform: scale(1.02) translateY(-5px); /* Optional: Add subtle hover effect */
+  }
+  
+  .template-card button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    width: 100%; /* Stretch button across card width */
+    padding: 5px 0; /* Adjust padding for button */
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .template-card button:hover {
+    color: #4caf50;
+  }
+  
+  .template-card p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+  }

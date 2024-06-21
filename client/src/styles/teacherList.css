@@ -1,0 +1,45 @@
+.list--header {
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list--header h2 {
+    color: #526d82;
+    margin-right: 1rem;
+}
+
+.list--header select {
+    border-radius: 10px;
+    border: 1px solid #dde6ed;
+    padding: 8px 12px;
+    color: #526d82;
+}
+
+.list--container {
+    margin-top: 1rem;
+    overflow-x: auto;
+}
+
+.teacher--table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.teacher--table th,
+.teacher--table td {
+    border: 1px solid #dde6ed;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.teacher--table th {
+    background-color: #f2f4f8;
+    color: #526d82;
+}
+
+.list:hover {
+    background: #dde6ed;
+    border-radius: 10px;
+}
