@@ -1,0 +1,26 @@
+.dashboard{
+  display: flex;
+  gap: 20px;
+}
+.dashboard--content{
+  background: #fff;
+  flex: 1;
+  border-radius: 2opx;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+.dashboard-admin{
+  display: flex;
+  gap: 20px;
+}
+.dashboard-admin--content{
+  background: #fff;
+  flex: 1;
+  border-radius: 2opx;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
